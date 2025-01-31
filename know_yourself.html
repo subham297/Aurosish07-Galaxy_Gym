@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Yourself - BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h5 style="text-align: center;">FIT <span>NESS</span></h5>
+            <h1>GAL<span>AXY</span></h1>
+        </div>
+        <div class="nav-links">
+            <a href="./" class="active">HOME</a>
+            <a href="./about.html">ABOUT US</a>
+            <a href="./classes.html">
+                CLASS & SCHEDULE</a>
+            <a href="./know_yourself.html">KNOW YOURSELF</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+            <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <section class="about-hero">
+        <div class="hero-image">
+            <!-- Background image will be added via CSS -->
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>ABOUT US</h1>
+            <nav class="breadcrumb">
+                <a href="/">Home</a>
+                <span class="separator">></span>
+                <span class="current">know-yourself</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- BMI Calculator Section -->
+    <section class="gym-bmi-section">
+        <div class="gym-container">
+            <div class="gym-bmi-grid">
+                <!-- Calculator Card -->
+                <div class="gym-bmi-calculator">
+                    <h2>BMI CALCULATOR</h2>
+                    <p>Calculate your Body Mass Index to understand your body composition</p>
+
+                    <form id="bmiForm" class="gym-bmi-form">
+                        <div class="gym-input-group">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" id="height" required min="100" max="250" placeholder="Enter height">
+                        </div>
+
+                        <div class="gym-input-group">
+                            <label for="weight">Weight (kg)</label>
+                            <input type="number" id="weight" required min="30" max="300" placeholder="Enter weight">
+                        </div>
+
+                        <button type="submit" class="gym-calculate-btn">
+                            CALCULATE BMI
+                            <i class="fas fa-calculator"></i>
+                        </button>
+                    </form>
+
+                    <div id="bmiResult" class="gym-bmi-result">
+                        <div class="gym-result-circle">
+                            <span class="gym-bmi-value">--</span>
+                            <span class="gym-bmi-label">Your BMI</span>
+                        </div>
+                        <div class="gym-bmi-message"></div>
+                    </div>
+                </div>
+
+                <!-- BMI Categories -->
+                <div class="gym-bmi-categories">
+                    <h3>BMI CATEGORIES</h3>
+                    <div class="gym-category-list">
+                        <div class="gym-category-item underweight">
+                            <div class="category-header">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <h4>Underweight</h4>
+                            </div>
+                            <p>BMI < 18.5</p>
+                        </div>
+
+                        <div class="gym-category-item normal">
+                            <div class="category-header">
+                                <i class="fas fa-check-circle"></i>
+                                <h4>Normal Weight</h4>
+                            </div>
+                            <p>BMI 18.5 - 24.9</p>
+                        </div>
+
+                        <div class="gym-category-item overweight">
+                            <div class="category-header">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <h4>Overweight</h4>
+                            </div>
+                            <p>BMI 25 - 29.9</p>
+                        </div>
+
+                        <div class="gym-category-item obese">
+                            <div class="category-header">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <h4>Obese</h4>
+                            </div>
+                            <p>BMI ≥ 30</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Health Tips -->
+            <div class="gym-health-tips">
+                <h3>NEXT STEPS</h3>
+                <div class="gym-tips-grid">
+                    <div class="gym-tip-card">
+                        <i class="fas fa-dumbbell"></i>
+                        <h4>Personal Training</h4>
+                        <p>Get a customized workout plan based on your BMI and fitness goals.</p>
+                        <a href="#" class="gym-tip-btn">Learn More →</a>
+                    </div>
+
+                    <div class="gym-tip-card">
+                        <i class="fas fa-apple-alt"></i>
+                        <h4>Nutrition Guidance</h4>
+                        <p>Receive expert nutrition advice to support your fitness journey.</p>
+                        <a href="#" class="gym-tip-btn">Learn More →</a>
+                    </div>
+
+                    <div class="gym-tip-card">
+                        <i class="fas fa-heart"></i>
+                        <h4>Health Assessment</h4>
+                        <p>Schedule a complete fitness assessment with our experts.</p>
+                        <a href="#" class="gym-tip-btn">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gym-join-banner">
+        <div class="gym-join-content">
+            <h2>TRANSFORM YOUR BODY, TRANSFORM YOUR LIFE</h2>
+            <p>Join now and get 20% off your first month!</p>
+            <a href="#" class="gym-join-btn">
+                JOIN NOW
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+        <div class="gym-join-image">
+            <img src="/images/Gym_inside.jpg" alt="Fitness enthusiast working out" id="gymJoinImage">
+        </div>
+    </section>
+
+
+    <footer id="footer-section"></footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
