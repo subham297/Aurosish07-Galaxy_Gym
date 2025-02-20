@@ -1,0 +1,502 @@
+@media (max-width: 1024px) {
+
+    /* hero */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+    }
+
+
+    /* features */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+
+    /* services */
+    .top-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .service-card,
+    .top-row .service-card {
+        aspect-ratio: 17/12;
+        /* Consistent aspect ratio on tablet */
+    }
+
+    .card-content {
+        padding: 30px;
+    }
+
+    .card-content span {
+        font-size: 0.8rem;
+    }
+
+    .card-content h4 {
+        font-size: 1.4rem;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
+
+    .bottom-row .card-content span {
+
+        margin-bottom: -1rem;
+
+    }
+
+    .bottom-row .card-content h4 {
+        margin-bottom: -1rem;
+    }
+
+    .top-row .card-content span {
+
+        margin-bottom: -1rem;
+
+    }
+
+    .top-row .card-content h4 {
+        margin-bottom: -1rem;
+    }
+
+
+
+    /* footer */
+    .info-items {
+
+        gap: 1rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+
+
+    /* Members */
+    .row {
+        height: 300px;
+    }
+
+    .member-overlay h4 {
+        font-size: 1.2rem;
+    }
+
+
+    /* schedule */
+
+    .gym-schedule-header,
+    .gym-schedule-row {
+        grid-template-columns: 120px repeat(3, 1fr);
+    }
+
+    .gym-schedule-header div:nth-child(n+5),
+    .gym-schedule-row div:nth-child(n+5) {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* nav & social */
+    .navbar {
+        padding: 20px;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+
+    /* features */
+    .features {
+        padding: 60px 0;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+
+    /* services */
+    .services {
+        padding: 80px 0;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+        margin-bottom: 60px;
+    }
+
+    .card-content span {
+        font-size: 0.6rem;
+    }
+
+    .card-content h4 {
+        font-size: 1rem;
+    }
+
+
+    .card-content {
+        padding: 25px;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
+
+    .bottom-row .card-content span {
+
+        margin-bottom: -1rem;
+
+
+    }
+
+    .bottom-row .card-content h4 {
+        margin-bottom: -1rem;
+    }
+
+    .top-row .card-content span {
+
+        margin-bottom: -1rem;
+        font-size: 0.8rem;
+
+    }
+
+    .top-row .card-content h4 {
+        margin-bottom: -1rem;
+        font-size: 1.2rem;
+    }
+
+    .bottom-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom-row .service-card:nth-child(3) {
+        grid-column: span 2;
+        justify-self: center;
+        width: 100%;
+        max-width: 300px;
+        /* padding-left: 50%; */
+        /* padding-right: 20%; */
+        /* justify-self: center; */
+        /* width: fit-content;
+        height: fit-content; */
+    }
+
+
+    /* trainer */
+    .trainers {
+        padding: 60px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+
+    /* footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-column h3 {
+        text-align: center;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+
+
+
+
+    /* about hero */
+    .about-hero {
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .breadcrumb {
+        font-size: 0.9rem;
+    }
+
+
+    /* meet team */
+
+    .meet-team {
+        padding: 60px 0;
+    }
+
+    .row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .column-small,
+    .column-large {
+        flex-direction: column;
+    }
+
+    .team-member {
+        height: 300px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    /* testimonial */
+    .testimonials {
+        padding: 60px 0;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial-content {
+        padding: 30px;
+    }
+
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+
+    /* rating star */
+    .star-rating {
+        font-size: 1.2rem;
+    }
+
+
+    /* contact wrapper */
+    .gym-contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .gym-contact-title {
+        font-size: 36px;
+    }
+
+    .gym-contact-section {
+        padding: 60px 0;
+    }
+
+
+    /* gym hero */
+    .gym-hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .gym-schedule-table {
+        overflow-x: auto;
+    }
+
+    .gym-schedule-header,
+    .gym-schedule-row {
+        min-width: 800px;
+    }
+
+    .gym-custom-features {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* bmi calculator */
+    .gym-hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .gym-bmi-calculator,
+    .gym-bmi-categories {
+        padding: 30px;
+    }
+
+
+    /* gym join banner */
+    .gym-join-banner {
+        flex-direction: column;
+    }
+
+    .gym-join-content {
+        padding: 3rem 2rem;
+    }
+
+    .gym-join-content h2 {
+        font-size: 2rem;
+    }
+
+    .gym-join-image {
+        height: 300px;
+    }
+
+    .gym-join-image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, #1a1a1a 0%, rgba(26, 26, 26, 0) 100%);
+    }
+
+    .gym-join-image::after {
+        background: linear-gradient(0deg, #1a1a1a 0%, rgba(26, 26, 26, 0) 100%);
+    }
+}
+
+
+
+
+
+
+/* coustom media quries */
+@media (max-width: 968px) {
+    .gym-bmi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gym-tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-wrapper {
+        max-width: 1000px;
+    }
+
+    .card-content h4 {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+
+    .trainers-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+
+
+}
+
+@media (max-width:600px) {
+
+    .bottom-row .card-content h4 {
+        font-size: 1rem;
+    }
+
+    .bottom-row {
+        gap: 1rem;
+    }
+
+    .top-row {
+        gap: 1rem;
+    }
+
+    .services-wrapper {
+        display: inline;
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width:851px) {
+    .story-img {
+        margin-top: -5rem;
+    }
+
+    .experience-badge {
+        margin-top: -5rem;
+    }
+}
+
+@media (max-width:800px) {
+
+    .story-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .experience-badge {
+        margin-top: 4rem;
+        margin-right: 3rem;
+        width: 115px;
+        height: 115px;
+    }
+
+    .story-img {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 5rem;
+    }
+
+}

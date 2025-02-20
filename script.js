@@ -250,3 +250,17 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+let index = 0;
+const container = document.querySelector(".trainers-container");
+const nextBtn = document.querySelector(".next-btn");
+const prevBtn = document.querySelector(".prev-btn");
+
+nextBtn.addEventListener("click", () => {
+    index = (index + 1) % 2;
+    container.style.transform = `translateX(-${index * 100}%)`;
+});
+
+prevBtn.addEventListener("click", () => {
+    index = (index - 1 + 2) % 2;
+    container.style.transform = `translateX(-${index * 100}%)`;
+});

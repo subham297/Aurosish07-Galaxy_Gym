@@ -14,7 +14,17 @@
 body {
     background-color: var(--dark-color);
     color: var(--light-color);
+
 }
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 
 /* Navbar Styles */
 .navbar {
@@ -137,16 +147,16 @@ body {
 }
 
 .content h2 {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     margin-bottom: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 .content h1 {
     font-size: 4rem;
     font-weight: 800;
     line-height: 1.2;
-    margin-bottom: 30px;
+    /* margin-bottom: 0px; */
 }
 
 .content h1 span {
@@ -195,49 +205,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        padding: 20px 0;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        margin: 10px 0;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .content h1 {
-        font-size: 3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 20px;
-    }
-
-    .social-links {
-        display: none;
-    }
-
-    .content h1 {
-        font-size: 2.5rem;
-    }
-}
 
 /* Add these styles to your existing CSS */
 
@@ -308,28 +276,8 @@ body {
     line-height: 1.6;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-}
 
-@media (max-width: 768px) {
-    .features {
-        padding: 60px 0;
-    }
 
-    .features h2 {
-        font-size: 2rem;
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
 
 /* Services Section Styles */
 .services {
@@ -372,12 +320,27 @@ body {
     /* Increased margin */
 }
 
+
+.bottom-row .card-content {
+    gap: 10px;
+}
+
+.bottom-row .card-content h4 {
+    font-size: 1.3rem;
+}
+
+.bottom-row .card-content span {
+    font-size: 0.8rem;
+}
+
+
 .bottom-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 30px;
     /* Increased gap */
 }
+
 
 .service-card {
     position: relative;
@@ -410,10 +373,14 @@ body {
 
 .service_img1 {
     background-image: url('./images/powerLifting.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .service_img2 {
     background-image: url('./images/cardio.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .service_img3 {
@@ -498,69 +465,6 @@ body {
 
 .service-card:hover .arrow-btn {
     background-color: var(--primary-color);
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .services-wrapper {
-        max-width: 1000px;
-    }
-
-    .card-content h4 {
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    .top-row,
-    .bottom-row {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .service-card,
-    .top-row .service-card {
-        aspect-ratio: 16/9;
-        /* Consistent aspect ratio on tablet */
-    }
-
-    .card-content {
-        padding: 30px;
-    }
-
-    .arrow-btn {
-        right: 30px;
-        bottom: 30px;
-        width: 45px;
-        height: 45px;
-    }
-}
-
-@media (max-width: 768px) {
-    .services {
-        padding: 80px 0;
-    }
-
-    .services h2 {
-        font-size: 2rem;
-        margin-bottom: 60px;
-    }
-
-    .card-content h4 {
-        font-size: 1.6rem;
-    }
-
-    .card-content {
-        padding: 25px;
-    }
-
-    .arrow-btn {
-        right: 25px;
-        bottom: 25px;
-        width: 40px;
-        height: 40px;
-    }
 }
 
 
@@ -705,24 +609,9 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .trainers {
-        padding: 60px 0;
-    }
 
-    .section-header {
-        margin-bottom: 40px;
-    }
 
-    .section-header h2 {
-        font-size: 2rem;
-    }
 
-    .trainers-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-}
 
 
 
@@ -856,41 +745,9 @@ body {
     color: var(--primary-color);
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .info-items {
-
-        gap: 1rem;
-    }
 
 
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
 
-    
-}
-
-@media (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-
-    .footer-column h3 {
-        text-align: center;
-    }
-
-    .footer-links {
-        text-align: center;
-    }
-}
 
 /* ____________________________________________ABOUT PAGE______________________________ */
 
@@ -967,20 +824,7 @@ body {
     color: var(--primary-color);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-hero {
-        height: 300px;
-    }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .breadcrumb {
-        font-size: 0.9rem;
-    }
-}
 
 /* Our Story Section */
 .our-story {
@@ -1207,40 +1051,6 @@ body {
     transform: translateY(0);
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .row {
-        height: 300px;
-    }
-
-    .member-overlay h4 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .meet-team {
-        padding: 60px 0;
-    }
-
-    .row {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .column-small,
-    .column-large {
-        flex-direction: column;
-    }
-
-    .team-member {
-        height: 300px;
-    }
-
-    .section-header h2 {
-        font-size: 2rem;
-    }
-}
 
 .testimonials {
     padding: 100px 0;
@@ -1360,29 +1170,7 @@ body {
     right: 10px;
 }
 
-@media (max-width: 768px) {
-    .testimonials {
-        padding: 60px 0;
-    }
 
-    .section-header h2 {
-        font-size: 2rem;
-    }
-
-    .testimonial-content {
-        padding: 30px;
-    }
-
-    .testimonial-content p {
-        font-size: 1rem;
-    }
-
-    .slider-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-    }
-}
 
 .star-rating {
     font-size: 1.5rem;
@@ -1397,12 +1185,6 @@ body {
 
 .star.inactive {
     color: #ccc;
-}
-
-@media (max-width: 768px) {
-    .star-rating {
-        font-size: 1.2rem;
-    }
 }
 
 
@@ -1514,22 +1296,6 @@ body {
 
 .gym-submit-btn:hover {
     background-color: #FF7733;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .gym-contact-wrapper {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .gym-contact-title {
-        font-size: 36px;
-    }
-
-    .gym-contact-section {
-        padding: 60px 0;
-    }
 }
 
 
@@ -1816,38 +1582,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
 
-    .gym-schedule-header,
-    .gym-schedule-row {
-        grid-template-columns: 120px repeat(3, 1fr);
-    }
-
-    .gym-schedule-header div:nth-child(n+5),
-    .gym-schedule-row div:nth-child(n+5) {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .gym-hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .gym-schedule-table {
-        overflow-x: auto;
-    }
-
-    .gym-schedule-header,
-    .gym-schedule-row {
-        min-width: 800px;
-    }
-
-    .gym-custom-features {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Customizable Classes Section */
 .gym-custom-classes {
@@ -2166,27 +1901,9 @@ body {
     color: var(--light-text);
 }
 
-/* Responsive Design */
-@media (max-width: 968px) {
-    .gym-bmi-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .gym-tips-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
-@media (max-width: 768px) {
-    .gym-hero-content h1 {
-        font-size: 2.5rem;
-    }
 
-    .gym-bmi-calculator,
-    .gym-bmi-categories {
-        padding: 30px;
-    }
-}
 
 .gym-join-banner {
     display: flex;
@@ -2267,26 +1984,4 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .gym-join-banner {
-        flex-direction: column;
-    }
-
-    .gym-join-content {
-        padding: 3rem 2rem;
-    }
-
-    .gym-join-content h2 {
-        font-size: 2rem;
-    }
-
-    .gym-join-image {
-        height: 300px;
-    }
-
-    .gym-join-image::after {
-        background: linear-gradient(0deg, #1a1a1a 0%, rgba(26, 26, 26, 0) 100%);
-    }
 }
